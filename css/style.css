@@ -8,12 +8,13 @@ body
 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 200;
-	overflow-x:hidden;
+	/*overflow-x:hidden;*/
 	margin:0;
 	background-color: black;
 
 	display: flex;
 	justify-content: center;
+	/*height: auto;*/
 }
 
 .content 
@@ -22,7 +23,26 @@ body
 	height: 100%;
 }
 
+.logoDreamContainer
+{
+	display: flex;
+	justify-content: center;
+	
+	width: 100%;
+	height: 400px;
+	
+}
 
+.logoDream
+{
+	
+	background-image: url("../media/Dream.png");
+	width: 50%;
+	height: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
 
 body::-webkit-scrollbar-track
 {
@@ -184,12 +204,12 @@ div::-webkit-scrollbar-thumb
 
 .titleJob
 {
-	font-size: 54px;
+	font-size: 5em;
 }
 
 .descJob
 {
-	font-size: 30px;
+	font-size: 3em;
 }
 
 
@@ -533,8 +553,14 @@ a{
 	justify-content: center;
 }
 
+
+/*LANDSCAPE*/
+
 /*Tablet*/
-@media (min-width:768px) and (max-width:1025px)
+@media only screen  
+and (min-width:768px) 
+and (max-width:1025px)
+and (orientation: landscape)
 {
 	.portada
 	{
@@ -609,7 +635,7 @@ a{
 	.textJob
 	{
 		align-self: center;
-		width: 60%;
+		width: 70%;
 	}
 
 	.textProject
@@ -647,7 +673,9 @@ a{
 }
 
 /*Phone*/
-@media (max-width:767px)
+@media only screen 
+and (max-width:767px)
+and (orientation: landscape)
 {
 	.noPhone
 	{
@@ -717,7 +745,7 @@ a{
 	.textJob
 	{
 		align-self: center;
-		width: 60%;
+		width: 70%;
 	}
 
 	.textProject
@@ -757,5 +785,237 @@ a{
 		height: 750px;
 		background-size: contain;
 
+	}
+}
+
+
+
+/*PORTRAIT*/
+
+/*Tablet*/
+@media only screen  
+and (min-width:768px) 
+and (max-width:1025px)
+and (orientation: portrait)
+{
+	.portada
+	{
+		height: 570px;
+		background-size: contain;
+
+	}
+	.noPhone
+	{
+		display:none;
+	}
+	.box
+	{
+		display: none;
+	}
+	
+	
+	.navMenuContainer
+	{
+		width: 60%;
+		height: 70px;
+	}
+	.projects
+	{
+		height: auto;
+	}
+	.Sliderprojects
+	{
+		display: none;
+	}
+
+	.Itemsprojects
+	{
+		width: 100%;
+	}
+
+	.itemProject
+	{
+		flex-direction: column;
+		align-self: center;
+
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	.itemJob
+	{
+		flex-direction: column;
+		align-self: center;
+		height: 100%;
+
+		/*margin-top: 40px;*/
+		margin-bottom: 70px;
+	}
+	.imgJob
+	{
+		height: 40%;
+		width: 100%;
+		align-self: center;
+		margin-bottom: 20px;
+	}
+	
+	.imgProject
+	{
+		width: 50%;
+		align-self: center;
+	}
+
+	.textJob
+	{
+		align-self: center;
+		width: 70%;
+		height: auto;
+	}
+
+	.textProject
+	{
+		align-self: center;
+		width: 60%;
+	}
+
+	.titleProject
+	{
+		font-size: 3em;
+	}
+
+	.descProject
+	{
+		font-size: 2em;
+	}
+	.button_span
+	{
+		width: 50%;
+		font-size: 1em;
+	}
+
+	.galleryContainer
+	{
+		width: 100%;
+	}
+
+	.ItemGalleryContainer
+	{
+		min-height: 402px;
+    	width: 100%;
+    
+	}
+}
+
+/*Tablet*/
+@media only screen  
+and (min-width:768px) 
+and (max-width:1025px)
+and (orientation: portrait)
+{
+	.portada
+	{
+		height: 570px;
+		background-size: contain;
+
+	}
+	.noPhone
+	{
+		display:none;
+	}
+	.box
+	{
+		display: none;
+	}
+	
+	
+	.navMenuContainer
+	{
+		width: 60%;
+		height: 70px;
+	}
+	.projects
+	{
+		height: auto;
+	}
+	.Sliderprojects
+	{
+		display: none;
+	}
+
+	.Itemsprojects
+	{
+		width: 100%;
+	}
+
+	.itemProject
+	{
+		flex-direction: column;
+		align-self: center;
+
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	.itemJob
+	{
+		flex-direction: column;
+		align-self: center;
+		height: 100%;
+
+		/*margin-top: 40px;*/
+		margin-bottom: 70px;
+	}
+	.imgJob
+	{
+		height: 40%;
+		width: 100%;
+		align-self: center;
+		margin-bottom: 20px;
+	}
+	
+	.imgProject
+	{
+		width: 50%;
+		align-self: center;
+	}
+
+	.textJob
+	{
+		align-self: center;
+		width: 70%;
+		height: auto;
+	}
+
+	.textProject
+	{
+		align-self: center;
+		width: 60%;
+	}
+
+	.titleProject
+	{
+		font-size: 3em;
+	}
+
+	.descProject
+	{
+		font-size: 2em;
+	}
+	.button_span
+	{
+		width: 50%;
+		font-size: 1em;
+	}
+
+	.galleryContainer
+	{
+		width: 100%;
+	}
+
+	.ItemGalleryContainer
+	{
+		min-height: 402px;
+    	width: 100%;
+    
 	}
 }
