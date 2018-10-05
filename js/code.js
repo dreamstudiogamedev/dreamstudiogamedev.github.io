@@ -1,16 +1,23 @@
 
 var currentImage=0;
 var numImages=0;
-var listDefaultImgs=[  "media/ConceptLightF.png","media/exterior.jpg","media/Relight1.jpg"];
+var listDefaultImgs=[  "media/ConceptLightF.png","media/exterior.jpg","media/r1.jpg","media/Relight1.jpg","media/cr4.png","media/r2.jpg","media/r3.jpg","media/r4.jpg"];
 function Init ()
 {
 	SliderHTML();
 	startSlider();
 	$('.navMenuContainer').fadeIn(2000).css("display","flex");
 	$('.content').fadeIn(2000);
+	
 	//SetMenuActions();	
-}
 
+
+}
+ function startAudio()
+ {
+ 	var audio = document.getElementById("audio")
+	audio.play();
+ }
 //Creamos el slider utilizando las imágenes que se encuentran dentro del array
 function SliderHTML()
 {
